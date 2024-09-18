@@ -45,3 +45,7 @@
     --body-sm: 400 .875rem/normal var(--open-sans);
     --body-xs: 400 .75rem/normal var(--open-sans);
 }
+
+body {
+    background-color: var(--shape-background);
+}
