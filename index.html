@@ -22,7 +22,64 @@
         </aside>
 
         <main>
-            
+            <div class="main-container">
+                <div class="top">
+                    <h1>Crie seu convite</h1>
+                </div>
+
+                <form action="">
+                    <fieldset>
+                        <legend class="event-info">
+                            <img src="assets/icons/calendar.svg" alt="ícone de um calendário">
+                            <h2>Sobre o evento</h2>
+                        </legend>
+
+                        <div class="in-field">
+                            <label for="title">Título</label>
+                            <input type="text" id="title" name="tilte" placeholder="Nome do evento">
+                        </div>
+
+                        <div class="flex">
+                            <div class="in-field">
+                                <label for="start">Início</label>
+                                <input type="datetime" name="start" id="start">
+                            </div>
+
+                            <div class="in-field">
+                                <label for="end">Fim</label>
+                                <input type="datetime" name="end" id="end">
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <label>Tipo</label>
+                            <div class="radio-wrapper">
+                                <div class="radio-field">
+                                    <span></span>
+                                    <input type="radio" name="event-type" id="in-person" value="in-person" checked>
+                                    <label for="in-person">Presencial</label>
+                                </div>
+    
+                                <div class="radio-field">
+                                    <span></span>
+                                    <input type="radio" name="event-type" id="online" value="online">
+                                    <label for="online">Online</label>
+                                </div>
+                            </div>
+
+                            <div class="in-field">
+                                <label for="place">Local</label>
+                                <input type="text" id="place" name="place">
+                            </div>
+                        </div>
+
+                        <div class="textarea-field">
+                            <label for="description">Descrição</label>
+                            <textarea name="description" id="description" cols="60" rows="10" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </main>
     </div>
 <body>
