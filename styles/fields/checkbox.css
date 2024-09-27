@@ -1,0 +1,53 @@
+.style-select {
+    & label {
+        display: block;
+        margin-bottom: .75rem;
+        font: var(--body-sm);
+        color: var(--text-body);
+    }
+
+    .check-btn {
+
+        & .check-field {
+            position: relative;
+            align-items: center;
+            gap: .75rem;
+
+            & label {
+                content: "Escuro";
+                margin: 0;
+
+                &#light {
+                    display: none;
+                }
+            }
+
+            & input {
+                position: absolute;
+                inset: 0;
+                opacity: 0;
+            }
+
+            & span {
+                background: url(/assets/icons/check-dark.svg);
+                width: 4rem;
+                height: 2rem;
+            }
+
+            &:has(:checked) {
+                & span {
+                    background: url(/assets/icons/check-light.svg);
+                }
+
+                & label {
+                    &#dark {
+                        display: none;
+                    }
+                    &#light {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}

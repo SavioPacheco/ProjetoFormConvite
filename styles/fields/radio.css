@@ -1,4 +1,4 @@
-.radio-btn label, .radio-color label, .radio-style label, .radio-select label {
+.radio-btn label, .radio-color label, .radio-style label {
         display: block;
         margin-bottom: .75rem;
         font: var(--body-sm);
@@ -162,6 +162,7 @@
             }
 
             & label {
+                margin-bottom: 0.5rem;
                 color: var(--text-heading);
             }
 

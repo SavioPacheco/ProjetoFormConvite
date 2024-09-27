@@ -84,7 +84,7 @@
                         <div class="error flex">
                             <img src="/assets/icons/circle-alert.svg" alt="Ícone de alerta">
                             <span>Campo obrigatório</span>
-                        </div>    
+                        </div>
                     </div>
                 </fieldset>
 
@@ -232,42 +232,36 @@
                         </div>
                     </div>
 
-                    <div class="radio-select">
-                        <label>Estilo</label>
+                    <div class="style-select flex">
 
-                        <div class="flex">
-                            <div class="radio-btn flex-1">
-                                <label>Tipo</label>
-                                <div class="radio-wrapper flex">
-                                    <div class="radio-field flex flex-1">
-                                        <span class="radio1"></span>
-                                        <input type="radio" name="event-type" id="in-person" value="in-person" checked>
-                                        <label for="in-person">Presencial</label>
-                                    </div>
-    
-                                    <div class="radio-field flex flex-1">
-                                        <span class="radio2"></span>
-                                        <input type="radio" name="event-type" id="online" value="online">
-                                        <label for="online">Online</label>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="in-field flex-1">
-                                <label for="cover-img">Local</label>
-                                <input type="file" id="cover-img" name="cover-img">
-
-                                <div class="error flex">
-                                    <img src="/assets/icons/circle-alert.svg" alt="Ícone de alerta">
-                                    <span>Campo obrigatório</span>
+                        <div class="check-btn flex-1">
+                            <label>Estilo</label>
+                            <div>
+                                <div class="check-field flex">
+                                    <input type="checkbox" name="check-style" id="check-style">
+                                    <span></span>
+                                    <label for="check-style" id="dark">Escuro</label>
+                                    <label for="check-style" id="light">Claro</label>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="in-field flex-2">
+                            <label for="cover-img">Foto de capa</label>
+                            <input type="file" id="cover-img" name="cover-img">
+
+                            <div class="error flex">
+                                <img src="/assets/icons/circle-alert.svg" alt="Ícone de alerta">
+                                <span>Campo obrigatório</span>
+                            </div>
+                        </div>
+
                     </div>
-                </fieldset>
-            </form>
         </div>
-    </main>
+        </fieldset>
+        </form>
+</div>
+</main>
 </div>
 
 <body>
