@@ -137,3 +137,38 @@
         }
     }
 }
+
+.radio-style {
+    .radio-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
+        gap: .5rem;
+
+        & .radio-field {
+            display: grid;
+            justify-items: center;
+            gap: .5rem;
+
+            background-color: var(--shape-button);
+            border: 1px solid var(--input-stroke);
+            border-radius: .5rem;
+            padding: 3px;
+
+            position: relative;
+
+            & input {
+                position: absolute;
+                inset: 0;
+                opacity: 0;
+            }
+
+            & label {
+                color: var(--text-heading);
+            }
+
+            &:has(:checked) {
+                padding: 2px;
+                border: 2px solid var(--brand-light);
+            }
+        }
+    }
+}
