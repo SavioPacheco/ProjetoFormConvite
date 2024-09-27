@@ -52,5 +52,9 @@ main {
                 color: var(--text-heading);
             }
         }
+
+        & form {
+            gap: 3rem;
+        }
     }
 }

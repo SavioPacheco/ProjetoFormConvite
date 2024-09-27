@@ -1,10 +1,11 @@
-.radio-btn {
-    & label {
+.radio-btn label, .radio-color label, .radio-style label, .radio-select label {
         display: block;
         margin-bottom: .75rem;
         font: var(--body-sm);
         color: var(--text-body);
-    }
+}
+
+.radio-btn {
 
     & .radio-wrapper {
         
@@ -69,5 +70,70 @@
 .radio-color {
     .radio-wrapper {
         grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+
+        .radio-field {
+
+            & input {
+                display: none;
+            }
+
+            & label {
+                width: 1.75rem;
+                height: 1.75rem;
+                border-radius: 50%;
+                border: 4px solid var(--shape-button);
+                outline: 2px solid var(--shape-button);
+            }
+
+            &:has(:checked) {
+                & label {
+                    outline-color: var(--brand-light);
+                }
+            }
+
+            & #blue + label {
+                background-color: var(--brand-light);
+            }
+
+            & #navy + label {
+                background-color: var(--navy);
+            }
+
+            & #purple + label {
+                background-color: var(--purple);
+            }
+
+            & #fuschia + label {
+                background-color: var(--fuschia);
+            }
+
+            & #pink + label {
+                background-color: var(--pink);
+            }
+
+            & #red + label {
+                background-color: var(--danger);
+            }
+
+            & #orange + label {
+                background-color: var(--orange);
+            }
+
+            & #yellow + label {
+                background-color: var(--yellow);
+            }
+
+            & #lime + label {
+                background-color: var(--lime);
+            }
+
+            & #green + label {
+                background-color: var(--green);
+            }
+
+            & #cyan + label {
+                background-color: var(--cyan);
+            }
+        }
     }
 }
