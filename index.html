@@ -10,78 +10,88 @@
     <title>Festivite</title>
 
     <link rel="stylesheet" href="styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
-    <div id="app">
-        <aside>
-            <div class="aside-container">
-                <img src="assets/Logo.svg" alt="Logo Festivite">
-                <h1>Festivite</h1>
-                <p>Crie um convite digital para o seu evento</p>
+<div id="app">
+    <aside>
+        <div class="aside-container">
+            <img src="assets/Logo.svg" alt="Logo Festivite">
+            <h1>Festivite</h1>
+            <p>Crie um convite digital para o seu evento</p>
+        </div>
+    </aside>
+
+    <main>
+        <div class="main-container">
+            <div class="top">
+                <h1>Crie seu convite</h1>
             </div>
-        </aside>
 
-        <main>
-            <div class="main-container">
-                <div class="top">
-                    <h1>Crie seu convite</h1>
-                </div>
+            <form action="">
+                <fieldset>
+                    <legend class="info-top flex">
+                        <img src="assets/icons/calendar.svg" alt="ícone de um calendário">
+                        <h2>Sobre o evento</h2>
+                    </legend>
 
-                <form action="">
-                    <fieldset>
-                        <legend class="event-info">
-                            <img src="assets/icons/calendar.svg" alt="ícone de um calendário">
-                            <h2>Sobre o evento</h2>
-                        </legend>
+                    <div class="in-field">
+                        <label for="title">Título</label>
+                        <input type="text" id="title" name="tilte" placeholder="Nome do evento">
+                    </div>
 
-                        <div class="in-field">
-                            <label for="title">Título</label>
-                            <input type="text" id="title" name="tilte" placeholder="Nome do evento">
+                    <div class="flex">
+                        <div class="in-field flex-1">
+                            <label for="start">Início</label>
+                            <input type="datetime-local" name="start" id="start">
                         </div>
 
-                        <div class="flex">
-                            <div class="in-field">
-                                <label for="start">Início</label>
-                                <input type="datetime" name="start" id="start">
-                            </div>
-
-                            <div class="in-field">
-                                <label for="end">Fim</label>
-                                <input type="datetime" name="end" id="end">
-                            </div>
+                        <div class="in-field flex-1">
+                            <label for="end">Fim</label>
+                            <input type="datetime-local" name="end" id="end">
                         </div>
+                    </div>
 
-                        <div class="flex">
+                    <div class="flex">
+                        <div class="radio-btn flex-1">
                             <label>Tipo</label>
-                            <div class="radio-wrapper">
-                                <div class="radio-field">
-                                    <span></span>
+                            <div class="radio-wrapper flex">
+                                <div class="radio-field flex flex-1">
+                                    <span class="radio1"></span>
                                     <input type="radio" name="event-type" id="in-person" value="in-person" checked>
                                     <label for="in-person">Presencial</label>
                                 </div>
-    
-                                <div class="radio-field">
-                                    <span></span>
+
+                                <div class="radio-field flex flex-1">
+                                    <span class="radio2"></span>
                                     <input type="radio" name="event-type" id="online" value="online">
                                     <label for="online">Online</label>
                                 </div>
                             </div>
-
-                            <div class="in-field">
-                                <label for="place">Local</label>
-                                <input type="text" id="place" name="place">
-                            </div>
                         </div>
 
-                        <div class="textarea-field">
-                            <label for="description">Descrição</label>
-                            <textarea name="description" id="description" cols="60" rows="10" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        <div class="in-field flex-1">
+                            <label for="place">Local</label>
+                            <input type="text" id="place" name="place">
                         </div>
-                    </fieldset>
-                </form>
-            </div>
-        </main>
-    </div>
+                    </div>
+
+                    <div class="textarea-field">
+                        <label for="description">Descrição</label>
+                        <textarea name="description" id="description" cols="60" rows="4"
+                            placeholder="Escreva sobre os detalhes do evento" required></textarea>
+                        <div class="error flex">
+                            <img src="/assets/icons/circle-alert.svg" alt="Ícone de alerta">
+                            <span>Campo obrigatório</span>
+                        </div>    
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</div>
+
 <body>
 
 </body>

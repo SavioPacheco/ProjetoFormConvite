@@ -49,3 +49,26 @@
 body {
     background-color: var(--shape-background);
 }
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.error {
+    align-items: center;
+    gap: .5rem;
+    margin-top: .5rem;
+    font: var(--body-xs);
+    color: var(--danger);
+    opacity: 0;
+
+    & img {
+        width: 1rem;
+        height: 1rem;
+    }
+}

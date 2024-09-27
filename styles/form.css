@@ -1,6 +1,18 @@
+@import url(fields/index.css);
+
 fieldset {
     display: grid;
+    gap: 1rem;
     
-
     border: none;
+
+    & .info-top {
+        color: var(--text-heading);
+        align-items: center;
+        margin-bottom: 1.5rem;
+        
+        & h2 {
+            font: var(--heading-sm);
+        }
+    }
 }

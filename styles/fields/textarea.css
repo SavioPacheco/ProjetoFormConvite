@@ -1,0 +1,39 @@
+.textarea-field {
+    & label {
+        display: block;
+        margin-bottom: .75rem;
+        font: var(--body-sm);
+        color: var(--text-body);
+    }
+
+    & textarea {
+        appearance: none;
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid var(--input-stroke);
+        border-radius: .5rem;
+
+        font: var(--body-md);
+        color: var(--input-placeholder);
+        background-color: var(--input-base);
+
+        &:focus-within {
+            outline: none;
+            border: 1px solid var(--brand-light);
+            color: var(--text-heading);
+        }
+
+        &:focus:invalid {
+            border-color: var(--danger);
+            + .error {
+              opacity: 1;
+            }
+          }
+          
+          &:valid {
+            + .error {
+              opacity: 0;
+            }
+          }
+    }
+}
