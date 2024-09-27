@@ -64,4 +64,10 @@
             
         }
     }
-} 
+}
+
+.radio-color {
+    .radio-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+    }
+}

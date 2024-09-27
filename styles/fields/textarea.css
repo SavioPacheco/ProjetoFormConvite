@@ -26,13 +26,13 @@
         &:focus:invalid {
             border-color: var(--danger);
             + .error {
-              opacity: 1;
+              display: flex;
             }
           }
           
           &:valid {
             + .error {
-              opacity: 0;
+              display: none;
             }
           }
     }

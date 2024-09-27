@@ -59,13 +59,17 @@ body {
     flex: 1;
 }
 
+.grid {
+    display: grid;
+}
+
 .error {
     align-items: center;
     gap: .5rem;
     margin-top: .5rem;
     font: var(--body-xs);
     color: var(--danger);
-    opacity: 0;
+    display: none;
 
     & img {
         width: 1rem;
