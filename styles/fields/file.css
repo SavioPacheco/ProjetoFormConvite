@@ -1,0 +1,61 @@
+.file-area {
+    position: relative;
+    .error {
+        margin-top: .75rem;
+    }
+
+    & .file-btn {
+        gap: .75rem;
+        align-items: center;
+
+        & label {
+            display: flex;
+            gap: .5rem;
+            background-color: var(--shape-button);
+            padding: .75rem;
+            margin: 0;
+            width: 7.43rem;
+            border-radius: .5rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--shape-hover);
+            }
+
+        }
+
+        & input {
+            position: absolute;
+            z-index: -1;
+            width: 12rem;
+            font: var(--body-sm);
+            color: var(--input-placeholder);
+            opacity: 0;
+            &::file-selector-button {
+                display: none;
+            }
+        }
+
+        & .info-file {
+            font: var(--body-sm);
+            color: var(--input-placeholder);
+        }
+        
+        &:has(:invalid):focus {
+            + .error {
+                display: flex;
+            }
+        }
+
+        &:has(:valid) {
+            & .info-file {
+                display: none;
+            }
+            & input {
+                position: initial;
+                z-index: 0;
+                opacity: 1;
+            }
+        }        
+    }
+}

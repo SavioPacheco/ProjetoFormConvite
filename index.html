@@ -246,13 +246,21 @@
                             </div>
                         </div>
 
-                        <div class="in-field flex-2">
-                            <label for="cover-img">Foto de capa</label>
-                            <input type="file" id="cover-img" name="cover-img">
-
-                            <div class="error flex">
-                                <img src="/assets/icons/circle-alert.svg" alt="Ícone de alerta">
-                                <span>Campo obrigatório</span>
+                        <div class="flex-2">
+                            <label>Foto de capa</label>
+                            <div class="file-area">
+                                <div class="file-btn flex">
+                                    <label for="cover-img">
+                                        <img src="assets/icons/upload.svg" alt="Ícone de enviar arquivo">
+                                        <span>Selecionar</span>
+                                    </label>
+                                    <input type="file" id="cover-img" name="cover-img" required>
+                                    <span class="info-file">Nenhum arquivo selecionado</span>
+                                </div>
+                                <div class="error flex">
+                                    <img src="/assets/icons/circle-alert.svg" alt="Ícone de alerta">
+                                    <span>Campo obrigatório</span>
+                                </div>
                             </div>
                         </div>
 
