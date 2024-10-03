@@ -1,6 +1,7 @@
 .radio-btn label, .radio-color label, .radio-style label {
         display: block;
         margin-bottom: .75rem;
+        
         font: var(--body-sm);
         color: var(--text-body);
 }
@@ -8,22 +9,24 @@
 .radio-btn {
 
     & .radio-wrapper {
-        
+        gap: 0;
         width: 100%;
+        
         border: 1px solid var(--input-stroke);
         border-radius: .5rem;
-        gap: 0;
         background-color: var(--input-base);
         
         & .radio-field {
             appearance: none;
-            padding: 0.656rem 1.125rem;
-            margin: 3px;
-            border-radius: .5rem;
-            position: relative;
+            gap: .5rem;
             justify-content: center;
             align-items: center;
-            gap: .5rem;
+            padding: 0.656rem 1.125rem;
+            margin: 3px;
+
+            border-radius: .5rem;
+            
+            position: relative;
             
             & span {
                 flex: 0 0 1rem;
@@ -38,7 +41,9 @@
             
             & input {
                 position: absolute;
-                display: none;
+                inset: 0;
+                opacity: 0;
+                cursor: pointer;
             }
             
             .radio1 {
@@ -83,6 +88,7 @@
                 border-radius: 50%;
                 border: 4px solid var(--shape-button);
                 outline: 2px solid var(--shape-button);
+                cursor: pointer;
             }
 
             &:has(:checked) {
@@ -159,6 +165,7 @@
                 position: absolute;
                 inset: 0;
                 opacity: 0;
+                cursor: pointer;
             }
 
             & label {

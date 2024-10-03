@@ -38,7 +38,7 @@
 
                     <div class="in-field">
                         <label for="title">Título</label>
-                        <input type="text" id="title" name="tilte" placeholder="Nome do evento">
+                        <input type="text" id="title" name="title" placeholder="Nome do evento">
                     </div>
 
                     <div class="flex">
@@ -265,11 +265,82 @@
                         </div>
 
                     </div>
+
+                </fieldset>
+
+                <fieldset class="event-contact">
+                    <legend class="info-top flex">
+                        <img src="assets/icons/contact.svg" alt="ícone de um perfil de usuário">
+                        <h2>Dados para contato</h2>
+                    </legend>
+
+                    <div class="in-field">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Nome completo" required>
+
+                        <div class="error flex">
+                            <img src="/assets/icons/circle-alert.svg" alt="Ícone de alerta">
+                            <span>Campo obrigatório</span>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="in-field flex-1">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+    
+                            <div class="error flex">
+                                <img src="/assets/icons/circle-alert.svg" alt="Ícone de alerta">
+                                <span>Campo obrigatório</span>
+                            </div>
+                        </div>
+
+                        <div class="in-field flex-1">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" required>
+    
+                            <div class="error flex">
+                                <img src="/assets/icons/circle-alert.svg" alt="Ícone de alerta">
+                                <span>Campo obrigatório</span>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="terms-event">
+                    <div class="terms-field">
+                        <input type="checkbox" name="privacy" id="privacy">
+                        <span></span>
+                        <label for="privacy">
+                            Li e concordo com os <a href="#">Teroms e Condições</a href="#"> e com a <a href="#">Política de Privacidade</a href="#">
+                        </label>
+                    </div>
+
+                    <div class="terms-field">
+                        <input type="checkbox" name="privacy" id="privacy">
+                        <span></span>
+                        <label for="privacy">
+                            Aceito receber atualizações e promoções por e-mail
+                        </label>
+                    </div>
+
+                    <div class="terms-field">
+                        <input type="checkbox" name="privacy" id="privacy">
+                        <span></span>
+                        <label for="privacy">
+                            Aceito receber atualizações e promoções por SMS
+                        </label>
+                    </div>
+
+                    <div class="action-field">
+                        <button>
+                            <img src="assets/icons/ticket.svg" alt="Íconde de um ticket"><span>Gerar convite</span>
+                        </button>
+                    </div>
+                </fieldset>    
+            </form>
         </div>
-        </fieldset>
-        </form>
-</div>
-</main>
+    </main>
 </div>
 
 <body>

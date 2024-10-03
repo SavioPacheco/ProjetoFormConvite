@@ -11,11 +11,13 @@
         & label {
             display: flex;
             gap: .5rem;
-            background-color: var(--shape-button);
             padding: .75rem;
             margin: 0;
             width: 7.43rem;
+
+            background-color: var(--shape-button);
             border-radius: .5rem;
+
             cursor: pointer;
 
             &:hover {
@@ -28,9 +30,11 @@
             position: absolute;
             z-index: -1;
             width: 12rem;
+
             font: var(--body-sm);
             color: var(--input-placeholder);
             opacity: 0;
+            
             &::file-selector-button {
                 display: none;
             }

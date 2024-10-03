@@ -21,6 +21,13 @@
             outline: none;
             border: 1px solid var(--brand-light);
         }
+
+        &:focus:invalid {
+            border-color: var(--danger);
+            + .error {
+                display: flex;
+            }
+        }
     }
 
     & input[type="datetime-local"] {
@@ -28,4 +35,12 @@
             opacity: 0;
         }
     }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 2rem var(--input-base) inset ;
+    -webkit-text-fill-color: var(--input-placeholder) ;
 }
