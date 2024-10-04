@@ -37,6 +37,31 @@
     }
 }
 
+.action-field {
+    margin-top: 3rem;
+    margin-left: auto;
+
+    & button {
+        all: unset;
+        display: flex;
+        gap: .75rem;
+
+        padding: .875rem 1.25rem;
+        border-radius: .5rem;
+
+        background-color: var(--brand-dark);
+        font: var(--body-md);
+        font-weight: 600;
+        color: var(--text-heading);
+        
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--brand-mid);
+        }
+    }
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 

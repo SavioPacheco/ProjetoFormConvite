@@ -52,3 +52,46 @@
         }
     }
 }
+
+.terms-event {
+    padding-top: 2.5rem;
+
+    .terms-field {
+        gap: .75rem;
+        align-items: center;
+
+        position: relative;
+
+        & input {
+            position: absolute;
+            opacity: 0;
+            width: 1.25rem;
+            height: 1.24rem;
+            cursor: pointer;
+        }
+
+         
+
+        & label {
+            font: var(--body-sm);
+            color: var(--text-body);
+
+            a {
+                color: var(--brand-light);
+                font-weight: 600;
+            }
+        }
+
+        & span {
+            background-image: url(../../assets/icons/checkbox-default.svg);
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+        &:has(:checked) {
+            & span {
+                background-image: url(../../assets/icons/checkbox-checked.svg);
+            }
+        }       
+    }
+}
